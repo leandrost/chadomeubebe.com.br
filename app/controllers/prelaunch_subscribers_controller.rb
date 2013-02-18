@@ -1,0 +1,2 @@
+class PrelaunchSubscribersController < ApplicationController
+end

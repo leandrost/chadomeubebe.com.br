@@ -35,11 +35,12 @@
     </div>
     <div id="let-me-know-box" class="six columns">
       <p>Quer saber mais ? Quando fica pronto ?</p>
-      <form action="">
-        <label for="email">Deixe seu email que agente te informa</label>
-        <input name="email" type="text" />
-        <input type="submit" class="call-to-action button" value="Quero saber mais" />
-      </form>
+      <%= form_for @subscriber do |f| %>
+        <%= @subscriber.errors.full_messages.first if @subscriber.errors.any? %>
+        <%= f.label :email, "Deixe seu email que agente te informa" %>
+        <%= f.text_field :email %>
+        <%= f.submit "Quero saber mais", class: "call-to-action button" %>
+      <% end %>
     </div>
     <!-- Piwik -->
     <script type="text/javascript">

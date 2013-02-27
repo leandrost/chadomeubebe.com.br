@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130217192409) do
 
-  create_table "news_letter_subscribers", :force => true do |t|
-    t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "news_letter_subscribers", ["email"], :name => "index_news_letter_subscribers_on_email"
-
   create_table "prelaunch_subscribers", :force => true do |t|
     t.string   "email"
     t.datetime "created_at", :null => false

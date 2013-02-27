@@ -35,10 +35,19 @@
     </div>
     <div id="let-me-know-box" class="six columns">
       <p>Quer saber mais ? Quando fica pronto ?</p>
-      <%= form_for @subscriber do |f| %>
-        <%= @subscriber.errors.full_messages.first if @subscriber.errors.any? %>
+      <% if flash[:success] %>
+        <div class="alert-box success">
+          <%= flash[:success] %>
+        </div>
+      <% end %>
+      <%= form_for @subscriber, url: '/' do |f| %>
         <%= f.label :email, "Deixe seu email que agente te informa" %>
-        <%= f.text_field :email %>
+        <%= f.email_field :email %>
+        <% if @subscriber.errors.any? %>
+          <% @subscriber.errors.full_messages.each do |message| %>
+            <small class='error'><%= message %></small>
+          <% end %>
+        <% end %>
         <%= f.submit "Quero saber mais", class: "call-to-action button" %>
       <% end %>
     </div>

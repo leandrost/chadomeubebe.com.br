@@ -1,6 +1,6 @@
 ChadomeubebeComBr::Application.routes.draw do
-  resources :prelaunch_subscribers
 
+  match '/', :to => 'prelaunch_subscribers#create', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

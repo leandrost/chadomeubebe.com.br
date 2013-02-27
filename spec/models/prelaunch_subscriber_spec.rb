@@ -13,4 +13,9 @@ describe PrelaunchSubscriber do
     subscriber = PrelaunchSubscriber.new(email: 'fulano@email.com')
     expect(subscriber.valid?).to be_true
   end
+  it "email must be unique" do
+    PrelaunchSubscriber.create(email: 'fulano@email.com')
+    new_subscriber = PrelaunchSubscriber.create(email: 'fulano@email.com')
+    new_subscriber.should be_invalid 
+  end
 end

@@ -44,6 +44,11 @@ describe PrelaunchSubscribersController do
         post :create, params
         assigns(:subscriber).should_not be_valid
       end
+
+      it "render action new template" do
+        post :create, params
+        response.should render_template(:new)
+      end
       
     end
 

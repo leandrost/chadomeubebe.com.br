@@ -28,13 +28,17 @@
 /* -----------------------------------------
    Comming Soon
 ----------------------------------------- */
+/* Palette:
+ * http://www.colourlovers.com/palette/195859/Denim_Parachute
+ */
+
 body {
   font-family: 'Nunito';
-  background-color: #128594;
+  background-color: #F0F0C0;
 }
 
 body, label, p {
-  color: #ffffff;
+  color: #480000;
 }
 
 p {
@@ -43,7 +47,7 @@ p {
 }
 
 .call-to-action {
-  background-color:#F28119;    
+  background-color: #6D9EAD;
 }
 
 #let-me-know-box p { font-size: 18px; }

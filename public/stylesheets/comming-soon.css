@@ -42,7 +42,7 @@ body, label, p {
 }
 
 p {
-  font-size: 24px;
+  font-size: 1.8em;
   text-align: left;
 }
 
@@ -50,9 +50,9 @@ p {
   background-color: #6D9EAD;
 }
 
-#let-me-know-box p { font-size: 18px; }
-
-.content{
-  padding-top: 150px;
-  margin: auto;
+#intro-box{
+  text-transform: lowercase;
+  margin: 4em 0;
 }
+
+#let-me-know-box p { font-size: 1.2em; }

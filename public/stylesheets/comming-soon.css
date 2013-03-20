@@ -1,0 +1,59 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Comming Soon
+*/
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/nunito-regular.ttf');
+}
+
+/* -----------------------------------------
+   Comming Soon
+----------------------------------------- */
+/* Palette:
+ * http://www.colourlovers.com/palette/195859/Denim_Parachute
+ */
+
+body {
+  font-family: 'Nunito';
+  background-color: #F0F0C0;
+}
+
+body, label, p {
+  color: #480000;
+}
+
+p {
+  font-size: 1.8em;
+  text-align: left;
+}
+
+.call-to-action {
+  background-color: #6D9EAD;
+}
+
+#intro-box{
+  text-transform: lowercase;
+  margin-top: 35%;
+  margin-bottom: 40px;
+}
+
+#let-me-know-box p { font-size: 1.2em; }

@@ -37,12 +37,23 @@ body {
   background-color: #F0F0C0;
 }
 
-body, label, p {
+body, label, p, h1 {
   color: #480000;
 }
 
+h1{
+  font-size: 1.6em;
+  margin-bottom: 2em;
+  letter-spacing: .1em;
+  text-align: justify;
+}
+
+h1>em{
+  font-size: 1.5em;
+}
+
 p {
-  font-size: 1.8em;
+  font-size: 1.2em;
   text-align: left;
 }
 
@@ -51,9 +62,5 @@ p {
 }
 
 #intro-box{
-  text-transform: lowercase;
-  margin-top: 35%;
-  margin-bottom: 40px;
+  margin: 20% 2em 40px;
 }
-
-#let-me-know-box p { font-size: 1.2em; }
